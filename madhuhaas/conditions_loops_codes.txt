@@ -1,0 +1,100 @@
+
+1.)ifthenelse:
+
+#!/bin/sh
+ 
+echo please enter your age
+ 
+ 
+read age
+ 
+if [ "$age" -ge 18 ]
+ 
+then
+ 
+   echo you are eligible
+ 
+else
+ 
+   echo you are not eligible
+ 
+fi
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2.)ifelseif :
+
+#!/bin/sh
+
+a=10
+b=20
+
+if [ $a == $b ]
+then
+   echo "a is equal to b"
+elif [ $a != $b ]
+then
+   echo "a is not equal to b"
+else
+    echo "nothing here enjoy your day"
+fi
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3.)for loop :
+
+#!/bin/bash
+ 
+for((i=0;i<=10;i++))
+do
+        echo $i
+done
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+4.) while loop :
+
+#!/bin/bash
+ 
+n=10;
+ 
+while [ $n -ge 0 ];
+do
+         echo $n
+        let n--;
+done
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+5.) until loop:
+
+#!/bin/bash
+ 
+n=5
+ 
+ 
+until  [ $n -gt 15 ];
+do
+        echo "$n"
+        n=$((n+1))
+done
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+6.)functions:
+
+#!/bin/bash
+ 
+function red(){
+ 
+echo "this is alert $1"
+}
+ 
+ 
+red
+ 
+red alert
+ 
+red alert1
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+7.)
