@@ -1,0 +1,13 @@
+#!/bin/sh
+
+NAME="Zara Ali"
+readonly NAME  				#readonly variables cannot change
+echo $NAME
+#NAME="Anashka"
+unset NAME  				# cannot unset a variable which is readonly
+echo $NAME
+
+
+echo $$					# PID of the current shell
+echo $0  				# file name of the current script
+echo $n 				# arguement with which the script was invoked

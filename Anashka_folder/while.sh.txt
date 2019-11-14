@@ -1,0 +1,11 @@
+#!/bin/sh
+
+num=6
+n=1
+
+while [ $n -le 10 ]
+do
+   res=`expr $n \* $num`
+   echo $n "*" $num "=" $res
+   n=`expr $n + 1`
+done

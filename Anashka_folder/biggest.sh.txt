@@ -1,0 +1,30 @@
+#!/bin/sh
+
+# Biggest among 3 numbers using if..else..fi statement
+
+
+#read -p "Enter number one : " n1
+#read -p "Enter number two : " n2
+#read -p "Enter number three : " n3
+
+
+n1=3
+n2=0
+n3=1
+
+if [ $n1 -gt $n2 ]
+then
+ if [ $n1 -gt $n3 ]
+  then
+   echo "biggest number is : $n1"
+  else
+   echo "biggest number is : $n3"
+ fi
+else
+ if [ $n2 -gt $n3 ]
+ then
+   echo "biggest number is : $n2"
+  else
+   echo "biggest number is : $n3"
+ fi
+fi

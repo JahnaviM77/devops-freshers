@@ -1,0 +1,7 @@
+#!/bin/sh
+
+NAME="Zara Ali"   		# Assigning a string value to a variable
+echo $NAME	  		# Displaying the value of the variable 
+age=16				# Assigning integer value
+
+echo "of age "$age

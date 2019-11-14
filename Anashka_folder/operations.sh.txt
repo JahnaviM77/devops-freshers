@@ -1,0 +1,33 @@
+#!/bin/sh
+
+n1=4
+n2=5
+
+-------------------------------------
+  #Arithmetic operators
+-------------------------------------
+
+sum=`expr $n1 + $n2`
+echo "sum : $sum"
+pro=`expr $n1 \* $n2`
+echo "product : $pro"
+diff=`expr $n1 - $n2`
+echo "difference : $diff"
+
+---------------------------------------
+  # Relational operators and if..else 
+--------------------------------------
+
+if [ $n1 -gt $n2 ]
+then
+echo "n1 is bigger..."
+else
+echo "n2 is bigger..."
+fi
+
+if [ $n1 -lt $n2 ]
+then
+echo "n1 is small..."
+else
+echo "n2 is bigger..."
+fi

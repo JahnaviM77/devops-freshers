@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Assigning values to array named DEPARTMENT
+
+
+DEPARTMENT[0]="CSE"
+DEPARTMENT[1]="ME"
+DEPARTMENT[2]="ECE"
+
+echo "The first dept is: ${DEPARTMENT[0]}"
+echo "elements are : ${DEPARTMENT[*]}"  		# To get all elements of array
+echo "elements are : ${DEPARTMENT[@]}" 			# To get all elements of array
