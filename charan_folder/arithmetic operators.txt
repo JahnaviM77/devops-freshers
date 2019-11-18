@@ -1,0 +1,9 @@
+#to perform arithmetic operators
+2	num1=20
+3	num2=10
+4	echo	$((	num1	+	num2	))
+5	echo	$((	num1	-	num2	))
+6	echo	$((	num1	*	num2	))
+7	echo	$((	num1	/	num2	))
+8	echo	$((	num1	%	num2	))
+9						

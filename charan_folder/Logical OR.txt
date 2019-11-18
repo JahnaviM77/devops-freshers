@@ -1,0 +1,8 @@
+1	#Logical Or Operator
+2	age=25
+3	if [ "$age" -gt 18 ] || [ "$age" -lt 30 ]
+4	then
+5	echo "valid age"
+6	else
+7	echo "age is not valid"
+8	fi
