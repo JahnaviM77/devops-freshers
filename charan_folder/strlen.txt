@@ -1,0 +1,4 @@
+# finding String length
+my_name="charan"
+echo "$my_name"
+echo "${#my_name}"

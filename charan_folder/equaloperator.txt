@@ -1,0 +1,9 @@
+# Equal Operator
+str1="charan"; 
+str2="charan"; 
+if [ $str1=$str2 ] 
+then 
+    echo "Both string are same"; 
+else
+    echo "Both string are not same"; 
+fi
