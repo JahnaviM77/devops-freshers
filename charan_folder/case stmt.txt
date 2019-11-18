@@ -1,0 +1,14 @@
+# case statement
+ vehicle=jeep
+case $vehicle in
+ "car" )       
+echo "Rent of vehicle is 10000" ;;
+ "bike" )       
+echo "Rent of vehicle is 2000" ;; 
+"truck" )      
+ echo "Rent of vehicle is 12000" ;; 
+"jeep" )       
+echo "Rent of vehicle is 9000" ;;
+              * )      
+ echo "unknown vehicle"  ;;
+esac 

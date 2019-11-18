@@ -1,0 +1,6 @@
+# Positional Parameters
+function hello()
+{    
+echo "Hello $1" 
+}
+ hello charan

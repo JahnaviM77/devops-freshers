@@ -1,0 +1,6 @@
+1	# If Condition
+2	count=10
+3	if(($count  >=9  ))
+4	then
+5	echo "condition is true"
+6	fi

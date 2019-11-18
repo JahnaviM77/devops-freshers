@@ -1,0 +1,9 @@
+# passing all parameters using $@
+function hello()
+{    
+for NAME in $@
+    do     
+echo "Hello $NAME"
+    done
+ }
+ hello Sai Charan Teja

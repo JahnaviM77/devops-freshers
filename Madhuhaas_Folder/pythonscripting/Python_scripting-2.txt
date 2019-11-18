@@ -1,0 +1,147 @@
+1.)while loop:
+
+#!/usr/bin/env python
+ 
+var=0
+var1=15
+ 
+while var != var1:
+        print var
+        var += 1
+ 
+[root@localhost ~]# ./whileloop.py
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+2.)functions:
+
+#!/usr/bin/env python
+ 
+def table(num):
+        for x in range(1,10):
+                print (x*num)
+ 
+ 
+table(5)
+[root@localhost ~]# ./function.py
+5
+10
+15
+20
+25
+30
+35
+40
+45
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+3.)classes:
+
+#!/usr/bin/env python
+ 
+class start:
+        def engine(self):
+                print 'turn keys and press the accelerator...'
+                print 'yes engine started(:'
+ 
+        def vehicle(self):
+                print 'put on gear and release clutch'
+ 
+        def stop(self):
+                print 'press stop button'
+ 
+ 
+car=start()
+car.engine()
+car.vehicle()
+car.stop()
+ 
+ 
+[root@localhost ~]# ./class.py
+turn keys and press the accelerator...
+yes engine started(:
+put on gear and release clutch
+press stop button
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+4.)strings:
+
+#!/usr/bin/env python
+ 
+string='my name is madhuhaas'
+ 
+break=(string.split())
+
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#!/usr/bin/env python
+ 
+string='my name is madhuhaas'
+string1='i am from vit'
+print(string+' '+string1)
+ 
+ 
+[root@localhost ~]# ./string.py
+my name is madhuhaas i am from vit
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+5.)lists:
+
+[root@localhost ~]# cat lists.py
+#!/usr/bin/env python
+ 
+ 
+cities={}
+ 
+cities['karnataka']='banglore'
+cities['telangana']='hyderabad'
+cities['andhra']='amaravathi'
+ 
+ 
+ 
+print cities
+print cities['andhra']
+ 
+[root@localhost ~]# ./lists.py
+{'telangana': 'hyderabad', 'andhra': 'amaravathi', 'karnataka': 'banglore'}
+amaravathi
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+6.)calling shell commands in python using subprocess:
+
+#!/usr/bin/env python
+ 
+import subprocess
+ 
+subprocess.call("ls -l", shell=True)
+[root@localhost ~]# ./subp.py
+total 36
+-rwxr-xr-x    1 root     root           300 Nov 15 15:40 class.py
+drwxr-xr-x    2 root     root            96 Nov 15 09:23 csr
+drwxr-xr-x    3 root     root           163 Aug 21  2011 dos
+-rwxr-xr-x    1 root     root            90 Nov 15 12:08 function.py
+-rw-r--r--    1 root     root           242 Jul 15  2017 hello.c
+-rwxr-xr-x    1 root     root           168 Nov 15 16:07 lists.py
+-rwxr-xr-x    1 root     root           105 Nov 15 15:58 string.py
+-rwxr-xr-x    1 root     root            79 Nov 15  2019 subp.py
+-rwxr-xr-x    1 root     root            80 Nov 15 11:04 whileloop.py
+[root@localhost ~]#  
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

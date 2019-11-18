@@ -1,0 +1,9 @@
+1	# File test operator
+2	echo -e "enter the name of the file: \c"
+3	read file_name
+4	if [ -e $file_name ]
+5	then
+6	echo "$file_name found"
+7	else
+8	echo "$file_name not found"
+9	fi

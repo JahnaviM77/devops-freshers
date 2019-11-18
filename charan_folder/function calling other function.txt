@@ -1,0 +1,10 @@
+# Function Calling other function
+ function hello()
+{    
+echo "Hello!"
+    now
+ }
+ function now(){
+    echo "Func Calling Other Func" 
+}
+hello

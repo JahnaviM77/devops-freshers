@@ -1,0 +1,6 @@
+1	# Read User Input
+2	#!/bin/sh
+3	echo	"enter name : "
+4	read name
+5	echo "entered name: $name"
+
