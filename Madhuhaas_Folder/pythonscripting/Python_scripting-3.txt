@@ -1,0 +1,132 @@
+1.)overloading in oops:
+
+[root@localhost ~]# cat overloading.py
+#!/usr/bin/env python
+ 
+class parent:
+ 
+        def Mymethod(self):
+                print 'this is in parent method'
+ 
+ 
+class child(parent):
+ 
+        def Mymethod(self):
+                print 'this is in child overloading method'
+ 
+ 
+ 
+ 
+ 
+c=child()
+c.Mymethod()
+[root@localhost ~]# ./overloading.py
+this is in child overloading method
+[root@localhost ~]#  
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+2.)data hiding:
+
+[root@localhost ~]# cat datahiding.py
+#!/usr/bin/env python
+ 
+class acounter:
+        value=0
+ 
+        def count(self):
+                self.value +=1
+                print self.value
+ 
+ 
+ 
+c=acounter()
+c.count()
+c.count()
+[root@localhost ~]# ./datahiding.py
+1
+2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+3.)threads in python:
+
+[root@localhost ~]# cat threads.py
+#!/usr/bin/env python
+import thread
+ 
+def function(delay):
+        count=0
+        i=0
+        while i < delay:
+                count +=1
+                delay -=1
+        print count
+ 
+function(5)
+try:
+        thread.start_new_thread(function,(10,))
+        thread.start_new_thread(function,(7,))
+except:
+        print 'cant use threads'
+while 1:
+        pass
+[root@localhost ~]# ./threads.py
+5
+7
+10
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+4.)file handling:
+
+#!/usr/bin/env python
+ 
+fo=open("textfile","wb")
+print fo.name
+ 
+[root@localhost ~]# ./filehandling.py
+textfile
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+5.)[root@localhost ~]# cat textfile
+ 
+[root@localhost ~]# cat filehandling.py
+#!/usr/bin/env python
+ 
+fo=open("textfile","wb")
+fo.write( "Python is a great language.\nYeah its great!!\n")
+ 
+fo.close()
+ 
+[root@localhost ~]# chmod +x filehandling.py
+[root@localhost ~]# ./filehandling.py
+[root@localhost ~]# cat textfile
+Python is a great language.
+Yeah its great!!
+[root@localhost ~]#  
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+6.)renaming file:
+
+[root@localhost ~]# ls
+datahiding.py    filehandling.py  myfile           renamefile.py
+dos              hello.c          overloading.py   threads.py
+[root@localhost ~]# cat renamefile.py
+#!/usr/bin/env python
+ 
+import os
+ 
+ 
+ 
+os.rename("myfile","textfile")
+[root@localhost ~]# chmod +x renamefile.py
+[root@localhost ~]# ./renamefile.py
+[root@localhost ~]# ls
+datahiding.py    filehandling.py  overloading.py   textfile
+dos              hello.c          renamefile.py    threads.py
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+7.)
+ 
